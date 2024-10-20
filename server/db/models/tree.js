@@ -16,20 +16,15 @@ module.exports = (sequelize, DataTypes) => {
       tree: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true,
       },
       location: DataTypes.STRING,
       heightFt: {
         type: DataTypes.FLOAT,
-        validate: {
-          min: 0,
-        },
+        min: 0,
       },
       groundCircumferenceFt: {
         type: DataTypes.FLOAT,
-        validate: {
-          min: 0,
-        },
+        min: 0,
       },
     },
     {
